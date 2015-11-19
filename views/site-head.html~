@@ -1,0 +1,112 @@
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner" ng-if=" !layout ">
+	<div class="container ">
+		<div class="navbar-header">
+			<a href="/" class="navbar-brand pull-left">ArtRank</a>
+        	</div>
+        	<nav class="collapse navbar-collapse spa-navbar-collapse" role="navigation">
+		    	<ul class="nav navbar-nav">
+
+		      		<li class="dropdown">
+		        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-expanded="false">
+						Vote <span class="caret"></span></a>
+		        		<ul class="dropdown-menu" role="menu">
+		        			<li><a href="/content/matchup/image">Visual Art</a></li>
+		        			<li><a href="/content/matchup/writing">Writing</a></li>
+		        			<li><a href="/content/matchup/audio">Music</a></li>
+		        			<li><a href="/content/matchup/video">Video</a></li>
+		        		</ul>
+				</li>
+				<li class="dropdown">
+		        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-expanded="false">
+						Visual Art <span class="caret"></span></a>
+		        		<ul class="dropdown-menu" role="menu">
+		        			<li><a href="#">Still Life</a></li>
+						<li><a href="#">Landscapes</a></li>
+						<li><a href="#">Nature</a></li>
+						<li><a href="#">Cartoons and caricatures</a></li>
+						<li><a href="#">Photography</a></li>
+						<li><a href="#">Architecture and Sculpture</a></li>
+						<li><a href="#">Horror</a></li>
+						<li><a href="#">Cute</a></li>
+						<li><a href="#">Atmospheric</a></li>
+						<li><a href="#">Science fiction</a></li>
+						<li><a href="#">3d Modeling</a></li>
+						<li><a href="#">Portraits</a></li>
+						<li><a href="#">NSFW</a></li>
+						<li><a href="#">Current</a></li>
+		        		</ul>
+				</li>
+				<li class="dropdown">
+		        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-expanded="false">
+						Writing <span class="caret"></span></a>
+		        		<ul class="dropdown-menu" role="menu">
+		        			<li><a href="#">Drama / play and movie scripts</a></li>
+						<li><a href="#">Short story</a></li>
+						<li><a href="#">Myths</a></li>
+						<li><a href="#">Graphic Novel</a></li>
+						<li><a href="#">Philosophical Questions</a></li>
+						<li><a href="#">Poetry and lyrics</a></li>
+						<li><a href="#">Biographical Summary</a></li>
+						<li><a href="#">Personal Stories</a></li>
+						<li><a href="#">Speech or Debate</a></li>
+						<li><a href="#">Short Story</a></li>
+						<li><a href="#">Character Analysis or Case Study</a></li>
+						<li><a href="#">Comedy Routine or Parody</a></li>
+						<li><a href="#">Recipes</a></li>
+		        		</ul>
+				</li>
+				<li class="dropdown">
+		        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-expanded="false">
+						Audio A-L <span class="caret"></span></a>
+		        		<ul class="dropdown-menu" role="menu">
+						<li><a href="#">A cappella</a></li>
+  						<li><a href="#">Alternative</a></li>
+						<li><a href="#">Blues</a></li>
+  						<li><a href="#">Christian</a></li>
+						<li><a href="#">Classical</a></li>
+  						<li><a href="#">Country</a></li>
+						<li><a href="#">Cultural and multilingual</a></li>
+						<li><a href="#">Dubstep</a></li>
+						<li><a href="#">EDM</a></li>
+						<li><a href="#">Folk</a></li>
+						<li><a href="#">Funk</a></li>
+						<li><a href="#">Hard Rock</a></li>
+						<li><a href="#">Hip hop</a></li>
+						<li><a href="#">Indie</a></li>
+						<li><a href="#">Instrumental</a></li>
+  						<li><a href="#">J/K-pop</a></li>
+						<li><a href="#">Jazz</a></li>
+		        		</ul>
+				</li>
+				<li class="dropdown">
+		        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-expanded="false">
+						Audio M-Z <span class="caret"></span></a>
+		        		<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Metal</a></li>
+  						<li><a href="#">Pop</a></li>
+						<li><a href="#">Rhythm and Blues</a></li>
+  						<li><a href="#">Rap</a></li>
+						<li><a href="#">Soft Rock</a></li>
+  						<li><a href="#">SKA</a></li>
+						<li><a href="#">Traditional</a></li>
+						<li><a href="#">Video game/8 bit</a></li>
+		        		</ul>
+				</li>
+		        	<li>
+					<a href="./faq">FAQ</a>
+		        	</li>
+			</ul>
+		    	
+			<ul class="nav navbar-nav navbar-right">
+			        <li>
+					<a href="./login">Welcome, <%= user.username %></a>
+			        </li>
+			</ul>
+		</nav>
+	</div>
+</header>

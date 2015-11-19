@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "artBoard" ng-controller = "artCtrl as arts">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ArtRank</title>
+
+    <script src="../lib/angular/angular.js"></script>
+    <script src="../scripts/art.js"></script>
+    <script src="../lib/jquery/dist/jquery.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+
+
+    	<!--<script src="lib/audiojs/audio.min.js"></script>
+	<script>
+	  audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	  });
+	</script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<% include site-head.html  %>
+
+<body  style="background-color:#B9B9FF">
+  <div class = "container">
+  <p><a class="btn btn-primary btn-lg" href="/content/matchup/image/<%= tag %>" role="button">Vote on this now!</a></p>
+  <div class="row">
+    <h1 style="padding-left: 15px;"> Highest Ranked Art: <%= tag %></h1>
+    <div class = "col-md-3" ng-repeat="imgart in imageArt | filter:query | orderBy:orderProp:true | tagFilter: '<%= tag %>'">
+
+      <% include panel-img.html  %>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

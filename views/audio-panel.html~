@@ -1,0 +1,19 @@
+<style> h3{text-align:center;}
+	h5{text-align:center;}
+	audio { width: 150px; display: block; margin:20px; }
+	color: #fff;
+  	background-color: #033649;
+ 	border-color: #036564;
+</style>
+
+<div class="panel panel-primary"  ng-init="expand = 0">
+    <div class="panel-heading">
+        <h3>{{audioart.title}}</h3>
+        <cite><h5> By: {{audioart.artist}}</h5></cite>
+    </div>
+
+    
+	<audio style="width:500px;height:32px" controls="controls" id="player1" src="{{audioart.audio}}" preload="metadata" control>
+			Oops, no support.
+	</audio>
+</div>

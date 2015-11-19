@@ -1,0 +1,16 @@
+<style> h3{text-align:center;}
+	h5{text-align:center;}
+	color: #fff;
+  	background-color: #033649;
+ 	border-color: #036564;
+</style>
+
+<div class="panel panel-primary abisso-panel-primary"  ng-init="expand = 0">
+    <div class="panel-heading">
+        <h3>{{audioart.title}}</h3>
+        <cite><h5> By: {{audioart.artist}}</h5></cite>
+    </div>
+	<div class="panel-body">
+			<audio preload="auto" id="id12" controls="controls" src="{{audioart.location}}"></audio>
+	</div>
+</div>

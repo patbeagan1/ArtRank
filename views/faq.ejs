@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="lib/angular/angular.js"></script>
+    <script src="/scripts/art.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/lib/ng-file-upload/angular-file-upload-shim.js"></script>
+    <script src="/lib/ng-file-upload/angular-file-upload.js"></script>
+    <script src="/scripts/upload.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <link href="/css/simple-sidebar.css" rel="stylesheet">
+
+<style>
+
+h1 {
+    margin-left: 108px;
+	}
+
+div {
+	/*margin-top: 100px;*/
+    /*margin-bottom: 100px;*/
+    margin-right: 70px;
+    margin-left: 70px;
+
+}
+.question {
+	color: #4B70BA;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.answer {
+	/*: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+	list-style-type: none;
+}
+
+.line { 
+	color: black;
+	border-width: 2.5px;
+	color: #CCCCFF;
+	border-style: solid;
+}
+
+</style>
+
+</head>
+
+<% include site-head.html %>
+<body>
+<h1>FAQ</h1><br>
+
+<div>
+	<ul>
+		<li class="question">Q: What is the elo rating system and how does it work?</li><br>
+		<li class="answer">A: The Elo Rating system was originally created by Arpad Elo for chess players that seeks to compute the relative skills of competitors when two players competed against one another. In the case of this website, the Elo Rating system is used to objectively rank the quality of art using head-to-head competition. Existing websites tend to promote art by popularity but the Elo system avoids this problem. The Elo system rapidly promotes high performing submissions and provides a system of checks and balances which does not have an intense bias toward popularity and longevity.
+		</li><hr class="line">
+
+		<li class="question">Q: How do I upload a file?</li><br>
+		<li class="answer">A: Uploading requires users to login or create an account. Then go to the upload page. On the upload page, users can either upload an original piece of writing in a text document, an original image, or an original audio file. The following table contains the formats supported:<br><br>
+		<!DOCTYPE html>
+		<html>
+
+		<head>
+		<style>
+		table, th, td {
+    		border: 1px solid black;
+    		border-collapse: collapse;
+    		text-align: center;
+		}
+		th, td {
+    		padding: 8px;
+		}
+		</style>
+		</head>
+
+		<body>
+
+		<table style="width:75%">
+  			<tr>
+    			<th>Media</th>
+    			<th colspan="4">Supported Formats</th>
+  			</tr>
+  			<tr>
+    			<th>Images</th>
+    			<td>.jpg</td>		
+    			<td>.png</td>
+    			<td>.gif</td>
+    			<td>.tif</td>
+  			</tr>
+  			<tr>
+    			<th>Audio</th>
+    			<td>.mp3</td>		
+    			<td>.flac</td>
+    			<td>.alac</td>
+    			<td>.wav</td>
+  			</tr>
+  			<tr>
+    			<th>Text</th>
+    			<td>.txt</td>		
+    			<td>.pdf</td>
+    			<td colspan="2"></td>
+  			</tr>
+		</table>
+
+		</body>
+		</html>
+		</li><hr class="line">
+
+		<li class="question">Q: How do I report an offensive image?</li><br>
+		<li class="answer">A: There is a “Report” button to flag offensive content. This signals the moderators about the possibly offensive content and the moderators can choose to allow or remove that piece of art.</li><hr class="line">
+
+		<li class="question">Q: I really like this artist! How can I find out more about them</li><br>
+		<li class="answer">A: If you click on the artist’s name, it will lead to the artist’s page where you can find additional information about them.</li><hr class="line">
+
+		<li class="question">Q: How do I find interesting art to vote on? </li><br>
+		<li class="answer">A: Simply click vote on the upper left and choose which tag you want to vote under!</li><hr class="line">
+
+		<li class="question">Q: Why don’t I have access to all the artist’s images/videos when I visit their profile page?</li><br>
+		<li class="answer">A: You will not be able to see art that you have not voted on yet. This is to prevent bias toward that particular artist. We want votes to be judged solely on the quality of the art and not be lured by who made it.</li><hr class="line">
+
+		<li class="question">Q: Do I get anything for voting a lot?</li><br>
+		<li class="answer">A: Yes. The more you vote, the more features and functionalities you can unlock!</li><hr class="line">
+
+	</ul>
+<div>
+</body>
+</html>

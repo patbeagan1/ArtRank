@@ -1,0 +1,18 @@
+<div class="panel panel-primary"  ng-init="expand = 0">
+
+    <div class="panel-heading">
+        <h3>{{imgart.title}}</h3>
+        <cite> By: {{imgart.artist}}</cite>
+    </div>
+
+    <div class="panel-body">
+        <div class="container-fluid" ng-click="expand = 1">
+            <img class="img-responsive" ng-src="{{imgart.img}}" />
+        </div>
+    </div>
+
+    <div class="expanded-img" ng-show="expand == 1" ng-click="expand = 0">
+        <h1 style="color: white"> {{imgart.title}} <small> By: {{imgart.artist}} </small> </h1>
+        <img ng-src="{{imgart.img}}" />
+    </div>
+</div>

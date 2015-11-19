@@ -1,0 +1,93 @@
+
+
+<div class="panel panel-default home-panel abisso-panel-primary">
+	<div class="panel-heading text-center">
+		<h4> NEW CONTENT </h4>
+		<div class="btn-group btn-group-sm nav-justified" role="group" aria-label="...">
+			<a class="btn btn-default" href="#img" role="tab" data-toggle="tab">Images</a>
+			<a class="btn btn-default" href="#text" role="tab" data-toggle="tab">Writing</a>
+			<a class="btn btn-default" href="#music" role="tab" data-toggle="tab">Audio</a>
+		</div>
+	</div>
+      	<div class="panel-body carousel-body">
+        	<div class="tab-content">
+			<div class="tab-pane active" id="img">
+        	    		<div id="image-sidebar-carousel" class="carousel slide" data-ride="carousel">
+
+			 		<!-- Wrapper for slides -->
+          				<div class="carousel-inner" role="listbox">
+                	  			<div class="item active">
+                	 	 			<br/>
+                	 				<h3 class = "text-center">Most Recently Uploaded Studio Art </h3>
+                	    				<br/>
+                	    				<div class="carousel-caption">
+                	    				</div>
+                	  			</div>
+                	  			<div ng-repeat = "imgart in imageArt" class="item">
+							<img src="{{imgart.location}}" alt="...">
+                	    				<div class="carousel-caption">
+                	      					{{imgart.title}}
+                	    				</div>
+                	  			</div>
+                			</div>
+
+	               			<!-- Controls -->
+	                		<a class="left carousel-control"
+						href="#image-sidebar-carousel" role="button" data-slide="prev">
+	                  			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        	          			<span class="sr-only">Previous</span>
+        	        		</a>
+        	        		<a class="right carousel-control"
+						href="#image-sidebar-carousel" role="button" data-slide="next">
+                  				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  				<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="tab-pane" id="text">
+				<div id="text-sidebar-carousel" class="carousel slide" data-ride="carousel">
+
+			 		<!-- Wrapper for slides -->
+          				<div class="carousel-inner" role="listbox">
+                	  			<div class="item active">
+                	 	 			<br/>
+                	 				<h3 class = "text-center">Most Recently Uploaded Written Art </h3>
+                	    				<br/>
+                	    				<div class="carousel-caption">
+                	    				</div>
+                	  			</div>
+                	  			<div ng-repeat = "txtart in arts.txtArt" class="item">
+							<br/>
+                	 				<h5 class = "text-left">{{txtart.txt}}</h3>
+                	    				<br/>
+                	  			</div>
+                			</div>
+
+	               			<!-- Controls -->
+	                		<a class="left carousel-control" href="#text-sidebar-carousel" role="button" data-slide="prev">
+	                  			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        	          			<span class="sr-only">Previous</span>
+        	        		</a>
+        	        		<a class="right carousel-control" href="#text-sidebar-carousel" role="button" data-slide="next">
+                  				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  				<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="tab-pane" id="music">mTest
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$('.carousel').carousel({interval: 5000}).on('slid.bs.carousel', function (e) {
+
+	var nextH = jQuery('.active.item').outerHeight();
+	$(this).find('.active.item').parent().animate({
+		height: nextH
+	}, 250);
+});
+</script>
+
+<!-- This script animates height changes in the carousel -->
